@@ -13,12 +13,14 @@ function Testimonial() {
       </div>
       <blockquote className="mt-2">
         <p className="font-display text-xl font-medium text-slate-900">
-          “This method of optimizing renewable energy placement is revolutionary. It has helped us identify the most efficient locations for our solar farms.”
+          “This method of optimizing renewable energy placement is
+          revolutionary. It has helped us identify the most efficient locations
+          for our solar farms.”
         </p>
       </blockquote>
       <figcaption className="mt-2 text-sm text-slate-500">
         <strong className="font-semibold text-blue-600 before:content-['—_']">
-        John Smith
+          John Smith
         </strong>
         , CEO of CleanEnergy Inc
       </figcaption>
@@ -28,6 +30,7 @@ function Testimonial() {
 
 export function Hero() {
   return (
+    // TODO: Get rid of some of the margin/padding on the top here
     <header className="overflow-hidden bg-slate-100 lg:bg-transparent lg:px-5">
       <div className="mx-auto grid max-w-6xl grid-cols-1 grid-rows-[auto_1fr] gap-y-16 pt-16 md:pt-20 lg:grid-cols-12 lg:gap-y-20 lg:px-3 lg:pb-36 lg:pt-20 xl:py-32">
         <div className="relative flex items-end lg:col-span-5 lg:row-span-2">
@@ -42,24 +45,23 @@ export function Hero() {
             <Image className="w-full" src={coverImage} alt="" priority />
           </div>
         </div>
-        <div className="relative px-4 sm:px-6 lg:col-span-7 lg:pb-14 lg:pl-16 lg:pr-0 xl:pl-20">
-          <div className="hidden lg:absolute lg:-top-32 lg:bottom-0 lg:left-[-100vw] lg:right-[-100vw] lg:block lg:bg-slate-100" />
-          <Testimonial />
-        </div>
         <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pl-16 lg:pt-0 xl:pl-20">
           <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
             <h1 className="font-display text-5xl font-extrabold text-slate-900 sm:text-6xl">
-            Optimize renewable energy placement with AI.
+              Optimize renewable energy placement with AI.
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-            Our tool utilizes advanced machine learning algorithms to identify the optimal locations for solar panels and wind turbines, maximizing energy production and sustainability.
+              Our tool utilizes advanced machine learning algorithms to identify
+              the optimal locations for solar panels and wind turbines,
+              maximizing energy production and sustainability.
             </p>
+            {/* TODO: Add links here to the right section */}
             <div className="mt-8 flex gap-4">
               <Button href="#free-chapters" color="blue">
-                Get Started
+                Use The Tool
               </Button>
               <Button href="#pricing" variant="outline" color="blue">
-              Launch Application
+                About Us
               </Button>
             </div>
           </div>
